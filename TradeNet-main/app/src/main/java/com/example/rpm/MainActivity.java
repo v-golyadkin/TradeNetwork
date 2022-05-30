@@ -133,11 +133,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.add_trade_network:{
-                addOrChangeTradeNetwork(true);
+                addOrChangeFaculty(true);
                 return true;
             }
             case R.id.change_trade_network_name:{
-                addOrChangeTradeNetwork(false);
+                addOrChangeFaculty(false);
                 return true;
             }
             case R.id.add_shop:{
@@ -218,13 +218,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         deleteTradeNetwork.setVisible(visible);
     }
 
-    private void addOrChangeTradeNetwork(boolean createNew){
+    private void addOrChangeFaculty(boolean createNew){
         AlertDialog inputDialog = new AlertDialog.Builder(MainActivity.this).create();
         View vv = (LinearLayout) getLayoutInflater().inflate(R.layout.input_new_trading_network_layout, null);
         inputDialog.setView(vv);
         inputDialog.setCancelable(true);
-        EditText editTradeNetworkName = (EditText) vv.findViewById(R.id.editTradeNetworkName);
-        Button accept = (Button) vv.findViewById(R.id.addTradeNetworkAccept);
+        EditText editTradeNetworkName = (EditText) vv.findViewById(R.id.editFacultyName);
+        Button accept = (Button) vv.findViewById(R.id.addFacultyAccept);
 
         if(!createNew){
             accept.setText("Изменить");
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getTradeNetwork.execute();
             inputDialog.cancel();
         });
-        ((Button) vv.findViewById(R.id.addTradeNetworkDecline)).setOnClickListener(v->{
+        ((Button) vv.findViewById(R.id.addFacultyDecline)).setOnClickListener(v->{
             inputDialog.cancel();
         });
         inputDialog.show();
@@ -330,8 +330,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return (ArrayList<TradeNetwork>) dataHandler.getDB().tradeNetworkDao().getAll();
         }
         @Override
-        protected void onPostExecute(ArrayList<TradeNetwork> tradeNetworks) {
-            allTradeNetworks = tradeNetworks;
+        protected void onPostExecute(ArrayList<TradeNetwork> faculties) {
+            allTradeNetworks = faculties;
             Toast.makeText(getApplicationContext(), "Торговые сети загружены(" + String.valueOf(allTradeNetworks.size()) + ")", Toast.LENGTH_SHORT)
                     .show();
             updateNavigationMenuValues();

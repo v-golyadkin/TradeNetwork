@@ -10,8 +10,8 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="add_trade_network_str">Добавить торговую сеть</string>
-    <string name="add_shop_str">Добавить магазин в торговую сеть</string>
-    <string name="string_add_shop_str">Добавить магазин в торговую сеть</string>
-    <string name="delete_trade_network_str">Удалить торговую сеть</string>
+    <string name="add_faculty_str">Добавить торговую сеть</string>
+    <string name="add_dep_str">Добавить магазин в торговую сеть сеть</string>
+    <string name="string_add_dep_str">Добавить магазин в торговую сеть сеть</string>
+    <string name="delete_faculty_str">Удалить торговую сеть</string>
 </resources>

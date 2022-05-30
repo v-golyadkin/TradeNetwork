@@ -21,7 +21,6 @@ import android.widget.Toast;
 import com.example.rpm.controllers.ApiService;
 import com.example.rpm.modelsDB.DataHandler;
 import com.example.rpm.modelsDB.Shop;
-import com.example.rpm.modelsDB.TradeNetwork;
 import com.example.rpm.modelsJSON.CountForm;
 
 import java.util.ArrayList;
@@ -38,8 +37,6 @@ public class ShopListActivity extends AppCompatActivity implements ShopListAdapt
     private int shopId;
     private String shopName;
     private String shopAdress;
-    private ArrayList<Shop> allShop;
-    private int currentShopId;
     private ArrayList<Shop> shopList = new ArrayList<>();
     private ApiService apiService = new ApiService();
     private CountForm countform = new CountForm();
@@ -70,7 +67,7 @@ public class ShopListActivity extends AppCompatActivity implements ShopListAdapt
             }
         }).start();
         sleep(1000);
-        setTitle(countform.name + " время работы " +countform.attime + " - " + countform.fortime);
+        setTitle("Время работы " + countform.attime + " - " + countform.fortime);
     }
 
     private void sleep(int millis){
@@ -85,18 +82,18 @@ public class ShopListActivity extends AppCompatActivity implements ShopListAdapt
         listView = findViewById(R.id.shop_list_view);
         Intent intent = getIntent();
         Bundle args = intent.getExtras();
-        shopId = args.getInt("shopId");
+        shopId = args.getInt("directionId");
         shopName = args.getString("title");
         shopAdress = args.getString("adress");;
         setTitle(shopName);
         dataHandler.createOrConnectToDB(getApplicationContext());
     }
     private void getDatabaseInfo(){
-        GetShop getShop = new GetShop();
-        getShop.execute();
+        GetStudents getStudents = new GetStudents();
+        getStudents.execute();
     }
     private void setListView(){
-        ShopListAdapter empAdapter = new ShopListAdapter(this, R.layout.shop_element_listview, shopList);
+        ShopListAdapter empAdapter = new ShopListAdapter(this, R.layout.students_element_listview, shopList);
         listView.setAdapter(empAdapter);
     }
 
@@ -151,10 +148,9 @@ public class ShopListActivity extends AppCompatActivity implements ShopListAdapt
                     setTitle(((EditText) vv.findViewById(R.id.input_shop_name)).getText().toString());
                     setTitle(((EditText) vv.findViewById(R.id.input_shop_adress)).getText().toString());
 
-                    String changeName = ((EditText) vv.findViewById(R.id.input_shop_name)).getText().toString();
-                    String changeAdress = ((EditText) vv.findViewById(R.id.input_shop_adress)).getText().toString();
-                    dataHandler.updateShop(shopId, changeName, changeAdress);
 
+                    dataHandler.updateShop(shopId, ((EditText) vv.findViewById(R.id.input_shop_name)).getText().toString());
+                    dataHandler.updateShop(shopId, ((EditText) vv.findViewById(R.id.input_shop_adress)).getText().toString());
                    ;
                     inputDialog.cancel();
                 });
@@ -223,8 +219,8 @@ public class ShopListActivity extends AppCompatActivity implements ShopListAdapt
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            GetShop getShop = new GetShop();
-            getShop.execute();
+            GetStudents getStudents = new GetStudents();
+            getStudents.execute();
             inputDialog.cancel();
         });
 
@@ -256,7 +252,7 @@ public class ShopListActivity extends AppCompatActivity implements ShopListAdapt
         createOrChangeShop(false, shopList.get(position));
     }
 
-    class GetShop extends AsyncTask<Void, Void, ArrayList<Shop>> {
+    class GetStudents extends AsyncTask<Void, Void, ArrayList<Shop>> {
         @Override
         protected ArrayList<Shop> doInBackground(Void... unused) {
             return (ArrayList<Shop>) dataHandler.getDB()

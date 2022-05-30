@@ -16,6 +16,6 @@
         android:visible="false" />
     <item
         android:id="@+id/delete_trade_network"
-        android:title="@string/delete_trade_network_str"
+        android:title="@string/delete_faculty_str"
         android:visible="false" />
 </menu>

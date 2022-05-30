@@ -23,7 +23,7 @@ public class DataHandler {
     }
 
 
-    //Faculty
+    //TradeNetwork
     public void addTradeNetwork(String name){
         TradeNetwork tradenetwork = new TradeNetwork();
         tradenetwork.name = name;
@@ -36,7 +36,19 @@ public class DataHandler {
         Thread thread = new Thread(runnable);
         thread.start();
     }
-
+    public void addTradeNetwork(int id, String name){
+        TradeNetwork tradenetwork = new TradeNetwork();
+        tradenetwork.id = id;
+        tradenetwork.name = name;
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                tradeNetworkDao.insertAll(tradenetwork);
+            }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
+    }
     public void deleteTradeNetwork(TradeNetwork tradenetwork){
         Runnable runnable = new Runnable() {
             @Override
@@ -72,20 +84,19 @@ public class DataHandler {
 
 
 
-    public void updateShop(int id, String newName, String newAdress){
+    //Shop
+
+
+    public void addShop(Shop shop){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                Shop shop = shopDao.getOneById(id);
-                shop.name = newName;
-                shop.adress = newAdress;
-                shopDao.update(shop);
+                shopDao.insertAll(shop);
             }
         };
         Thread thread = new Thread(runnable);
         thread.start();
     }
-
     public void updateShop(Shop shop){
         Runnable runnable = new Runnable() {
             @Override
@@ -97,12 +108,13 @@ public class DataHandler {
         thread.start();
     }
 
-    //Student
-    public void addShop(Shop shop){
+    public void updateShop(int id, String newName){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                shopDao.insertAll(shop);
+                Shop dir = shopDao.getOneById(id);
+                dir.name = newName;
+                shopDao.update(dir);
             }
         };
         Thread thread = new Thread(runnable);
@@ -110,21 +122,12 @@ public class DataHandler {
     }
 
     public void deleteShop(int id){
-      Runnable runnable = new Runnable() {
-           @Override
-           public void run() {
-               Shop shop = shopDao.getOneById(id);
-               shopDao.delete(shop);
-            }
-        };
-        Thread thread = new Thread(runnable);
-        thread.start();
-    }
-    public void deleteShop(Shop shop){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                shopDao.delete(shop);
+
+                Shop dir = shopDao.getOneById(id);
+                shopDao.delete(dir);
             }
         };
         Thread thread = new Thread(runnable);

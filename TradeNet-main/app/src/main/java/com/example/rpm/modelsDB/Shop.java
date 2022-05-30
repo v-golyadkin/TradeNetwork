@@ -8,8 +8,6 @@ import androidx.room.ForeignKey;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-import java.util.ArrayList;
-
 @Entity(foreignKeys = @ForeignKey(
         entity = TradeNetwork.class,
         parentColumns = "id",
@@ -30,12 +28,4 @@ public class Shop {
 
     @Ignore public boolean newObj;
     @Ignore public boolean changed;
-    @Ignore public static Shop findShopById(ArrayList<Shop> searchingList, int shopId){
-        for(Shop shop :searchingList){
-            if(shop.id == shopId){
-                return shop;
-            }
-        }
-        return null;
-    }
 }
