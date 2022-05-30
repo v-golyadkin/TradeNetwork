@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.179" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.179" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/drawable/ic_menu_camera.xml" value="0.179" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.179" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.179" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/drawable/side_nav_bar.xml" value="0.179" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/activity_emloyees_list.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/activity_main.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/activity_students_list.xml" value="0.16185410334346503" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/app_bar_main.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/content_main.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/employee_element_listview.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/fragment_gallery.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/fragment_home.xml" value="0.18085106382978725" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/input_department.xml" value="0.25" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/input_direction.xml" value="0.16185410334346503" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/input_employee.xml" value="0.33" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/input_new_faculty_layout.xml" value="0.16185410334346503" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/input_student.xml" value="0.16185410334346503" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/nav_header_main.xml" value="0.14266304347826086" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/layout/students_element_listview.xml" value="0.16185410334346503" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/menu/activity_main_drawer.xml" value="0.2163265306122449" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/menu/employees_list_menu.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/menu/main.xml" value="0.33" />
+        <entry key="..\:/Users/Eugene/Desktop/RPM/app/src/main/res/menu/students_list_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2535" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/activity_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/activity_shop_list.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/activity_students_list.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/app_bar_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/content_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/fragment_home.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/input_direction.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/input_new_faculty_layout.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/input_shop.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/input_student.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/nav_header_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/layout/students_element_listview.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/menu/activity_main_drawer.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/menu/main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/FacultyApp-main/app/src/main/res/menu/students_list_menu.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.281" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/drawable/ic_menu_camera.xml" value="0.281" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/activity_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/activity_shop_list.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/app_bar_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/content_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/fragment_home.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/input_new_trading_network_layout.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/input_shop.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/nav_header_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/shop_element_listview.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/layout/students_element_listview.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/menu/activity_main_drawer.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/menu/main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Vitaliy/AndroidStudioProjects/TradeNetApp-main/app/src/main/res/menu/shop_list_menu.xml" value="0.35104166666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

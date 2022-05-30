@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_trade_network"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Добавить тоговую сеть"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_shop"
+        android:title="Добавить магазин"
+        android:visible="false" />
+    <item
+        android:id="@+id/change_trade_network_name"
+        android:title="Изменить"
+        android:visible="false" />
+    <item
+        android:id="@+id/delete_trade_network"
+        android:title="@string/delete_trade_network_str"
+        android:visible="false" />
+</menu>
